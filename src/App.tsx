@@ -24,14 +24,18 @@ function App() {
         </LayersControl.BaseLayer>
 
         <LayersControl.BaseLayer name="Carto">
-        <TileLayer
-            attribution='&copy; <a href="https://www.carto.com/">carto.com</a> contributors'
-            url="https://www.google.cn/maps/vt?lyrs=s@189&gl=tr&x={x}&y={y}&z={z}"
-        />
-          {/* <TileLayer
-            attribution='&copy; <a href="https://www.carto.com/">carto.com</a> contributors'
-            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-          /> */}
+          <TileLayer
+              attribution='&copy; <a href="https://www.carto.com/">carto.com</a> contributors'
+              url="https://www.google.cn/maps/vt?lyrs=s@189&gl=tr&x={x}&y={y}&z={z}
+              "
+          />
+        </LayersControl.BaseLayer>
+        <LayersControl.BaseLayer name="Carto">
+          <TileLayer
+              attribution='&copy; <a href="https://www.carto.com/">carto.com</a> contributors'
+              url="https://www.google.cn/maps/vt?lyrs=s@189&gl=tr&x={x}&y={y}&z={z}
+              "
+          />
         </LayersControl.BaseLayer>
         <LayersControl.Overlay name="Stations">
           <Marker position={[1.15735, 103.7]}>
